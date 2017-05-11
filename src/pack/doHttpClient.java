@@ -14,12 +14,12 @@ import org.apache.http.impl.client.HttpClients;
 /**
  * @author china-libai
  * DDos
- * CMD中：C:\Users\Administrator\Desktop>java -jar doD.jar http://www.baidu.com
+ * CMD涓細C:\Users\Administrator\Desktop>java -jar doD.jar http://www.baidu.com
  */
 public class doHttpClient {
 
 	/**
-	 * @param args[0] 要D的地址
+	 * @param args[0] 瑕丏鐨勫湴鍧�
 	 */
 	public static void main(String[] args) {
 		Runnable r = new Runnable() {
